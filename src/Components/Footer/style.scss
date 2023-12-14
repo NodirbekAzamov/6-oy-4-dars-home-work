@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Medium";
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+footer {
+    background: rgba(38, 148, 153, 0.04);
+    padding: 70px 200px;
+
+    .footer_boxs {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .footer_box {
+            .footer_link {
+                display: flex;
+                gap: 27px;
+                margin-top: 20px;
+            }
+
+            h5 {
+                color: #000;
+                font-family: "Regular";
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: 1.44px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                color: #000;
+                font-family: "Regular";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 160%;
+                letter-spacing: 0.96px;
+                margin-bottom: 10px;
+            }
+
+            .footer-a {
+                color: #000;
+                font-family: "Medium";
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 150%;
+                letter-spacing: 0.96px;
+            }
+
+            h6 {
+                color: #000;
+                font-family: "Medium";
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                letter-spacing: 1.2px;
+                margin-bottom: 42px;
+            }
+
+            .footer_icon {
+                display: flex;
+                gap: 35px;
+
+                button {
+                    color: #FFF;
+                    font-family: "Regular";
+                    font-size: 16px;
+                    font-weight: 400;
+                    letter-spacing: 0.96px;
+                    padding: 10px 32px;
+                    border-radius: 5px;
+                    background: #C9453B;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                input {
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: 1px solid #000;
+                    opacity: 0.1;
+                    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
+
+                }
+
+                input::placeholder {
+                    color: #000;
+                    font-family: "Regular";
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    margin-bottom: 20px;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        font-family: "Medium";
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 150%;
+                        letter-spacing: 0.96px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1201px) {
+    footer {
+        .footer_boxs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    footer {
+        .footer_boxs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+    footer {
+        padding: 80px 100px;
+        .footer_boxs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+}
+
+@media (min-width: 448px) and (max-width: 768px) {
+    footer {
+        padding: 80px 50px;
+        .footer_boxs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+}
+
+@media (max-width: 447px) {
+    footer {
+        padding: 50px 50px;
+        .footer_boxs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            .footer_box {
+                text-align: center;
+
+                .footer_icon {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
