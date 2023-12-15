@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 import "./style.scss";
 export class Header extends Component {
-    state = {
-        navbar_item: [
-            {},
-        ],
-    }
     render() {
         return (
             <div className="menu">
@@ -26,7 +21,7 @@ export class Header extends Component {
                     <h1>Railtrips To Here, There And Everywhere!</h1>
                     <p>We all wish to start our year the best way possible and also according
                         to a common belief if you have a great start to your.</p>
-                  <button>Explore more</button>
+                    <button>Explore more</button>
                 </div>
             </div>
         )
